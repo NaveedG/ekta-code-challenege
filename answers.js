@@ -57,6 +57,6 @@ headerMessage: string;
 
 /* Answer: A variable may be passed from a parent component to a child component through property binding, which involves the following steps:
 
-1.) Bind the parent component's property (i.e, headerMessage) to a child component's property in the parent's HTML template where the child component will be displayed.
-2.) Import the Input decorator itself into the child component (i.e., header-component) TS file.
-3.) Add the binded property to the child component TS file by preceded by the @Input decorator. */
+1.) Bind the parent component's property (i.e, headerMessage) to a child component's property inside the parent's HTML template where the child component (i.e., header-component) will be displayed.
+2.) Import the Input decorator itself into the child component TS file.
+3.) Add the binded property to the child component TS file preceded by the @Input decorator. */
