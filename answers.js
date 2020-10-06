@@ -30,4 +30,39 @@ During each iteration, the callback function passed into the map function will r
 
 
 
+// #4 I have an array of objects, they are currently untyped. I'm unsure of how but mixed in with my normal objects ({ id, name, date, createdAt }), are null values. How would you eliminate the null values?
+
+let arr = [id, name, date, createdAt, nullVal]
+
+removeNull = arr => {
+  return arr.filter(obj => obj != null)
+}
+
+
+
+/* #5 In Angular 2+ how to you pass variable(s) from a parent to a child? answer in concept
+
+code example for #5:
+<div>
+  <header-component />
+</div>
+class FileOne {
+...
+private date: any;
+headerMessage: string;
+...
+}
+// file 2 -- header-component
+<div>
+  // HERE is where I want a header message
+</div>``` */
+
+/* Answer: A variable may be passed from a parent component to a child component through property binding:
+1.) Import the Input decorator into the child component (i.e., header-component) TS file
+2.) Bind the parent component's property (i.e., headerMessage) to the child component using the @Input decorator
+3.) The binded property may then be displayed in the child component's HTML template
+*/
+
+
+
 
